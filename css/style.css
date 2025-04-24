@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    font-family: 'Poppins';
+}
+header{
+    background-color: white;
+    padding: 20px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    transition: 300ms ease-in-out;
+}
+header:hover{
+    background-color: rgb(43, 43, 43);
+    transition: 300ms ease-in-out;
+    h2{
+        color: white;
+    }
+    nav ul li a{
+        color: white;
+        transition: 300ms ease-in-out;
+    }
+    nav ul li a:hover{
+        font-weight: bold;
+        transition: 300ms ease-in-out;
+    }
+}
+header h2{
+    color: rgb(43, 43, 43);
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(76, 76, 76);
+}
+#beranda{
+    position: relative;
+    
+    height: 100vh;
+}
+video{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.teks{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    color: white;
+    row-gap: 30px;
+}
+.teks h1{
+    font-size: 50px;
+}
+.teks a{
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    color: #393939;
+    font-weight: bold;
+    transition: 300ms ease-in-out;
+}
+.teks a:hover{
+    background-color: #393939;
+    color: white;
+    transition: 300ms ease-in-out;
+}
+.background{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, #39393979, #393939eb);
+    z-index: 2;
+}
+#tentang{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    padding: 0 50px;
+    gap: 50px;
+}
+.teks-tentang{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    transition: 300ms ease-in-out;
+}
+.teks-tentang:hover{
+    background-color: rgb(43, 43, 43);
+    padding: 20px;
+    border-radius: 10px;
+    transition: 300ms ease-in-out;
+    h2{
+        color: white;
+    }
+    p{
+        color: white;
+    }
+}
+.teks-tentang h2{
+    color: rgb(43, 43, 43);
+}
+.teks-tentang p{
+    word-spacing: 5px;
+    text-align: justify;
+    color: rgb(76, 76, 76);
+}
+.gambar-tentang{
+    width: 50%;
+}
+.gambar-tentang img{
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 30px;
+    transition: 300ms ease-in-out;
+}
+.gambar-tentang img:hover{
+    transform: scale(1.03);
+    transition: 300ms ease-in-out;
+}
+footer{
+    background-color: rgb(43, 43, 43);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    margin-top: 100px;
+
+}
