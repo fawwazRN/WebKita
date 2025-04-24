@@ -10,6 +10,9 @@ a{
 body{
     font-family: 'Poppins';
 }
+html{
+    scroll-behavior: smooth;
+}
 header{
     background-color: white;
     padding: 20px 70px;
@@ -88,6 +91,7 @@ video{
     z-index: 3;
     color: white;
     row-gap: 30px;
+    text-align: center;
 }
 .teks h1{
     font-size: 50px;
