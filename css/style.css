@@ -67,9 +67,9 @@ nav ul li a{
     color: rgb(76, 76, 76);
 }
 #beranda{
-    position: relative;
-    
+    position: sticky;
     height: 100vh;
+    top: 0;
 }
 video{
     position: relative;
@@ -115,6 +115,12 @@ video{
     height: 100vh;
     background-image: linear-gradient(to right, #39393979, #393939eb);
     z-index: 2;
+}
+#isi{
+    z-index: 99;
+    position: relative;
+    background-color: white;
+    padding-top: 100px;
 }
 #tentang{
     display: flex;
